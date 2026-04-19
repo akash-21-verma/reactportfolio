@@ -1,6 +1,7 @@
 'use client';
 
 import { useInView } from 'react-intersection-observer';
+import AnimatedNetwork from './AnimatedNetwork';
 
 const techStack = {
   frontend: [

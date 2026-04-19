@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section id="about" className="py-24 bg-neutral-light">
@@ -5,7 +7,8 @@ export default function About() {
         {/* Left: Image */}
         <div className="flex justify-center">
           <div className="w-64 h-64 rounded-2xl bg-primary/10 flex items-center justify-center text-4xl font-bold text-primary">
-            A
+            <Image src={'/Akash-Me.jpg'}alt="Akash-Me"  width={300}
+  height={300} />
           </div>
         </div>
 

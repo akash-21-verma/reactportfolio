@@ -4,7 +4,7 @@ import { useState } from 'react';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const links = ['home', 'tech', 'about', 'contact'];
+  const links = ['home', 'tech','skills', 'about', 'contact'];
 
   return (
     <nav
@@ -56,7 +56,7 @@ export default function Navbar() {
       {/* Sidebar */}
       <div
         className={`fixed top-0 right-0 h-screen w-[70%] z-[70]
-        bg-white/70 backdrop-blur-lg shadow-lg
+        bg-white/90 backdrop-blur-lg shadow-lg
         flex flex-col items-center justify-center gap-8 text-xl
         transform transition-transform duration-300 ease-in-out
         ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
@@ -66,7 +66,7 @@ export default function Navbar() {
             key={item}
             href={`#${item}`}
             onClick={() => setIsOpen(false)}
-            className="capitalize hover:text-primary-dark transition"
+            className="capitalize text-primary hover:text-primary-dark transition"
           >
             {item}
           </a>

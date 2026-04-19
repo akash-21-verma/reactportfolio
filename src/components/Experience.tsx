@@ -4,16 +4,16 @@ import { useInView } from 'react-intersection-observer';
 
 const experiences = [
   {
-    year: '2024 - Present',
-    role: 'Full Stack Developer',
-    company: 'Your Company',
-    desc: 'Working on scalable web applications',
+    year: '2025 - Present',
+    role: 'Software Engineer',
+    company: 'Marg ERP Ltd.',
+    desc: 'Working on resource management web app. Marg HR',
   },
   {
-    year: '2023 - 2024',
-    role: 'Backend Developer',
-    company: 'Company Name',
-    desc: 'Built APIs and backend systems',
+    year: '2023 - 2025',
+    role: 'Full Stack Dev.',
+    company: 'Mittal Software Labs',
+    desc: 'Built APIs and backend systems for Contract Processing Tool',
   },
 ];
 
@@ -36,7 +36,7 @@ export default function Experience() {
   });
 
   return (
-    <section ref={ref} className="py-24 bg-white">
+    <section ref={ref} id='skills' className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16">
         {/* LEFT → Timeline */}
         <div>
